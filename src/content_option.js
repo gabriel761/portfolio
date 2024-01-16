@@ -125,19 +125,17 @@ const dataportfolio = [{
         gif: linkrGif,
         title:"Rede social de compartilhamento de links",
         description: "Cadastro e Login Intuitivos, compartilhamento de links, siga outros usuários, comente, curta e descubra as trends do momento.",
-        tecnologias: "React",
     },
     {
         gif: drivent,
-        title:"Sistema para gerenciamento de eventos.",
+        title:"Sistema para gerenciamento de eventos",
         description: "Sistema White Label para gerenciamento de eventos. Inscrições simples, opções de hospedagem, formas de pagamento flexíveis, seleção de atividades personalizadas e emissão de certificados de participação.",
-        detailDescription: "A Rede Social de Compartilhamento é uma plataforma dinâmica que visa unir usuários por meio de interesses comuns, oferecendo uma experiência atraente e interativa.A interface do usuário foi projetada com foco na experiência do usuário, garantindo que a plataforma seja acessível e funcional em uma variedade de dispositivos e tamanhos de tela",
-        tecnologias:"Node.js, Express, PostgreSQL, React e Styled components"
+       
     },
     {
 
         gif: trackt,
-        title:" Aplicação completa de acompanhamento de hábitos",
+        title:"Aplicação completa de acompanhamento de hábitos",
         description: "Com uma interface intuitiva, você pode facilmente adicionar novos hábitos e fazer um acompanhamento, fornecendo descrições detalhadas e estabelecendo datas para começar",
     },
 ]
