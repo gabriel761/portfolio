@@ -40,8 +40,9 @@ const projectDetailsMap = {
     images: [driventIngresso, driventHotel,drivenReserva, driventPagamento, driventHospedagem, driventReservaP, driventDiasAtividades,driventAtividades]
   },
   'Aplicação completa de acompanhamento de hábitos': {
-    descricao: 'Com uma interface intuitiva, você pode facilmente adicionar novos hábitos e fazer um acompanhamento, fornecendo descrições detalhadas e estabelecendo datas para começar',
-    tecnologias: '',
+    descricao: " TrackIt é a sua nova ferramenta completa para acompanhar e cultivar hábitos saudáveis de forma simples e intuitiva. Desenvolvido com foco na sua experiência, oferecemos uma plataforma que facilita a gestão dos seus hábitos diários, promovendo uma rotina mais organizada e produtiva.",
+    funcionalidades:"Login e Cadastro Rápido, Hábitos Diários, Histórico, Visualização Personalizada",
+    tecnologias: 'React, Styled Components, Context API, PostgreSQL',
     images: [trackt, tracktLogin, tracktHabito, tracktSalvar, tracktCheck],
   },
 };
@@ -65,7 +66,7 @@ const ProjectDetails = () => {
         <h2>Informações do Projeto</h2>
         <p className='descricao'>{details.descricao}</p>
         <p className='descricao'>{details.funcionalidades}</p>
-        <p className='tecnologias'>{details.tecnologias}</p>
+        <h6 className='tecnologias'>{details.tecnologias}</h6>
       </div>
       <div className="project-image">
         {details.images.map((image, index) => (
