@@ -4,6 +4,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { Link } from 'react-router-dom';
 
 export const Portfolio = () => {
   return (
@@ -22,33 +23,34 @@ export const Portfolio = () => {
         </Row>
         <div className="portfolio-items">
           {dataportfolio.map((data, i) => (
-            <div key={i} className="portfolio-item">
-              {i % 2 === 0 ? ( // Se o índice for par
-                <>
-                  <div className="video-wrapper">
-                    <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
-                  </div>
-                  <div className="item-content">
-                    <h1>{data.title}</h1>
-                    <p>{data.description}</p>
-                  </div>
-                </>
-              ) : ( // Se o índice for ímpar
-                <>
-                  <div className="item-content">
-                    <h1>{data.title}</h1>
-                    <p>{data.description}</p>
-                  </div>
-                  <div className="video-wrapper">
-                    <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
-                  </div>
-                </>
-              )}
-            </div>
+      <Link key={i} to={`/project/${encodeURIComponent(data.title)}`} state={{ videoUrl: data.gif }}>
+        <div className="portfolio-item">
+                {i % 2 === 0 ? (
+                  <>
+                    <div className="video-wrapper">
+                      <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
+                    </div>
+                    <div className="item-content">
+                      <h1>{data.title}</h1>
+                      <p>{data.description}</p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="item-content">
+                      <h1>{data.title}</h1>
+                      <p>{data.description}</p>
+                    </div>
+                    <div className="video-wrapper">
+                      <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
+                    </div>
+                  </>
+                )}
+              </div>
+            </Link>
           ))}
         </div>
       </Container>
     </HelmetProvider>
   );
 };
-

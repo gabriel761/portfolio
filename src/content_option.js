@@ -131,6 +131,8 @@ const dataportfolio = [{
         gif: drivent,
         title:"Sistema para gerenciamento de eventos.",
         description: "Sistema White Label para gerenciamento de eventos. Inscrições simples, opções de hospedagem, formas de pagamento flexíveis, seleção de atividades personalizadas e emissão de certificados de participação.",
+        detailDescription: "A Rede Social de Compartilhamento é uma plataforma dinâmica que visa unir usuários por meio de interesses comuns, oferecendo uma experiência atraente e interativa.A interface do usuário foi projetada com foco na experiência do usuário, garantindo que a plataforma seja acessível e funcional em uma variedade de dispositivos e tamanhos de tela",
+        tecnologias:"Node.js, Express, PostgreSQL, React e Styled components"
     },
     {
 

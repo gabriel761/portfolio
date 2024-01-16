@@ -1,0 +1,48 @@
+/* projectDetailsStyle.css */
+.project-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+  
+  .project-details video {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+    margin-left: 260px;
+    margin-top: 20px;
+  }
+  
+  .project-details video:hover {
+    transform: scale(1.05);
+    border: 3px solid black;
+    border-radius: 20px;
+  }
+  
+  .project-details .project-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .project-details .project-content h2 {
+    color: #495057;
+    margin-bottom: 10px;
+  }
+  
+  .project-details .project-content p {
+    color: #495057;
+    margin-bottom: 20px;
+  }
+  
+  /* Adicione mais estilos conforme necessário */
+  
