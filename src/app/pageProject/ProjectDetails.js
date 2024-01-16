@@ -1,4 +1,3 @@
-// ProjectDetails.js
 import React from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import "./style.css";
@@ -7,6 +6,23 @@ import linkrCadastro from "../../assets/images/linkr - cadastro.jpg"
 import linkrPesquisaUsuario from "../../assets/images/linkr - pesquisa usuário.png"
 import linkTimeline from "../../assets/images/linkr - timeline.png"
 import linkUserPosts from "../../assets/images/linkr - userposts.png"
+import driventIngresso from "../../assets/images/Drivent - Ingresso.png"
+import driventHotel from "../../assets/images/Drivent - Hote.png"
+import drivenReserva from "../../assets/images/Drivent - Reservar.png"
+import driventPagamento from "../../assets/images/Drivent - Pagamento.png"
+import driventHospedagem from "../../assets/images/Drivent - Hospedagem.png"
+import driventReservaP from "../../assets/images/Drivent - ReservaPessoa.png"
+import driventDiasAtividades from "../../assets/images/Drivent - Atividades(Dias).png"
+import driventAtividades from "../../assets/images/Drivent - Atividades.png"
+import trackt from "../../assets/images/trackt - cadastro.png"
+import tracktLogin from "../../assets/images/trackt - login.png"
+import tracktHabito from "../../assets/images/trackt - habito.png"
+import tracktSalvar from "../../assets/images/trackt - salvar babito.png"
+import tracktCheck from "../../assets/images/trackt - check.png"
+
+
+
+
 
 
 
@@ -21,12 +37,12 @@ const projectDetailsMap = {
   'Sistema para gerenciamento de eventos': {
     descricao: 'Sistema White Label para gerenciamento de eventos. Inscrições simples, opções de hospedagem, formas de pagamento flexíveis, seleção de atividades personalizadas e emissão de certificados de participação.',
     tecnologias: 'Node.js, Express, PostgreSQL, React, Styled components',
-    images: [/* Adicione as imagens correspondentes a este projeto */],
+    images: [driventIngresso, driventHotel,drivenReserva, driventPagamento, driventHospedagem, driventReservaP, driventDiasAtividades,driventAtividades]
   },
   'Aplicação completa de acompanhamento de hábitos': {
     descricao: 'Com uma interface intuitiva, você pode facilmente adicionar novos hábitos e fazer um acompanhamento, fornecendo descrições detalhadas e estabelecendo datas para começar',
     tecnologias: '',
-    images: [/* Adicione as imagens correspondentes a este projeto */],
+    images: [trackt, tracktLogin, tracktHabito, tracktSalvar, tracktCheck],
   },
 };
 
