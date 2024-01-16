@@ -1,12 +1,10 @@
 /* projectDetailsStyle.css */
 .project-details {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    margin-left: 20px;
+    text-align: center;
   }
   
   .project-details video {
@@ -17,10 +15,8 @@
     border: 3px solid black;
     border-radius: 20px;
     outline: none;
-    margin-top: 15px;
-    transition: transform 0.3s ease;
-    margin-left: 260px;
     margin-top: 20px;
+    transition: transform 0.3s ease;
   }
   
   .project-details video:hover {
@@ -35,14 +31,40 @@
   }
   
   .project-details .project-content h2 {
-    color: #495057;
+    color:white;
     margin-bottom: 10px;
   }
   
   .project-details .project-content p {
-    color: #495057;
+    color:grey;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   
-  /* Adicione mais estilos conforme necessário */
+  .project-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    margin: 15px;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
+  
+  .linkr {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .linkr:hover {
+    transform: scale(1.1);
+  }
   
