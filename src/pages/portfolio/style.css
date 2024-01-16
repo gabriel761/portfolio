@@ -1,0 +1,22 @@
+.portfolio-item {
+    width: 800px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .video-wrapper,
+  .item-content {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+  }
+  
+  .item-content {
+    margin-left: 20px;
+    color:white;
+  }
+  
