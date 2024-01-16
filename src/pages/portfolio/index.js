@@ -1,3 +1,4 @@
+// Portfolio.js
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -20,31 +21,17 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="portfolio-items">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="portfolio-item">
-                {i % 2 === 0 ? (
-                  <>
-                    <div className="video-wrapper">
-                      <video width="500" height="500" controls autoPlay loop src={data.gif} alt="" />
-                    </div>
-                    <div className="item-content">
-                      <p>{data.description}</p>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="item-content">
-                      <p>{data.description}</p>
-                    </div>
-                    <div className="video-wrapper">
-                      <video width="500" height="500" controls autoPlay loop src={data.gif} alt="" />
-                    </div>
-                  </>
-                )}
+          {dataportfolio.map((data, i) => (
+            <div key={i} className="portfolio-item">
+              <div className="video-wrapper">
+                <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
               </div>
-            );
-          })}
+              <div className="item-content">
+                <h1>{data.title}</h1>
+                <p>{data.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </Container>
     </HelmetProvider>

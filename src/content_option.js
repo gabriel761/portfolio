@@ -7,11 +7,11 @@ import trackt from "./assets/images/trackt.mp4"
 const logotext = "JOÃO";
 const meta = {
     title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    description: "I’m Jull stack developer,currently working in Rio de Janeiro",
 };
 
 const introdata = {
-    title: "I’m João Brother Doe",
+    title: "I’m João Brother",
     animated: {
         first: "I love coding",
         second: "I code cool websites",
@@ -23,7 +23,7 @@ const introdata = {
 
 const dataabout = {
     title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "Hi, I'm João Gabriel, a software developer from Rio de Janeiro, Brazil. Specializing in React, React Native, Node.js, and more. I've worked on diverse projects like Festum and Simulador Oceânica. Fluent in Spanish, with advanced English skills. Excited about crafting impactful solutions and contributing to innovative project",
 };
 const worktimeline = [{
         jobtitle: "Designer of week",
@@ -42,60 +42,101 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
+const skills = [
+    {
+        name: "React",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "React Native",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "Vue",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "Node.js",
+        value: 75,
+    },
+   
+    {
+        name: "Typescript",
+        value: 70,
     },
     {
-        name: "Jquery",
+        name: "PostgreSQL",
+        value: 75,
+    },
+    {
+        name: "MySQL",
+        value: 70,
+    },
+
+    {
+        name: "GitHub",
+        value: 80,
+    },
+    {
+        name: "JavaScript",
         value: 85,
     },
+    {
+        name: "PHP",
+        value: 75,
+    },
+    {
+        name: "Java",
+        value: 70,
+    },
+    {
+        name: "Figma",
+        value: 80,
+    },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+
+const services = [
+    {
+        title: "Front-end Development",
+        description: "Experienced in creating responsive and visually appealing user interfaces using technologies like React, Vue, and jQuery.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Mobile App Development",
+        description: "Skilled in developing cross-platform mobile applications using React Native, providing seamless user experiences on iOS and Android.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Full-stack Development",
+        description: "Proficient in building end-to-end web applications, utilizing technologies such as Node.js and Express.js for server-side development and PostgreSQL/MySQL for database management.",
+    },
+    {
+        title: "Web Design",
+        description: "Adept at crafting engaging and user-centric web designs with a focus on user experience, incorporating tools like Figma, Photoshop, Illustrator, and Adobe XD.",
+    },
+    {
+        title: "E-commerce Solutions",
+        description: "Experienced in developing e-commerce platforms, providing solutions for online businesses with features tailored to specific needs.",
     },
 ];
+
+
 
 const dataportfolio = [{
-        img: linkr,
         gif: linkrGif,
-        description: "Implementação de uma rede social de compartilhamento de links Tecnologias e Conceitos React Node.js PostgresqlArquitetura em camadasaxios styled-components",
-        link: "#",
+        title:"Rede social de compartilhamento de links",
+        description: "Cadastro e Login Intuitivos, compartilhamento de links, siga outros usuários, comente, curta e descubra as trends do momento.",
+        tecnologias: "React",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
         gif: drivent,
-
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        title:"Sistema para gerenciamento de eventos.",
+        description: "Sistema White Label para gerenciamento de eventos. Inscrições simples, opções de hospedagem, formas de pagamento flexíveis, seleção de atividades personalizadas e emissão de certificados de participação.",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+
         gif: trackt,
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        title:" Aplicação completa de acompanhamento de hábitos",
+        description: "Com uma interface intuitiva, você pode facilmente adicionar novos hábitos e fazer um acompanhamento, fornecendo descrições detalhadas e estabelecendo datas para começar",
     },
 ]
 const contactConfig = {
