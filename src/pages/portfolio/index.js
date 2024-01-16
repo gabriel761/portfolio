@@ -23,13 +23,27 @@ export const Portfolio = () => {
         <div className="portfolio-items">
           {dataportfolio.map((data, i) => (
             <div key={i} className="portfolio-item">
-              <div className="video-wrapper">
-                <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
-              </div>
-              <div className="item-content">
-                <h1>{data.title}</h1>
-                <p>{data.description}</p>
-              </div>
+              {i % 2 === 0 ? ( // Se o índice for par
+                <>
+                  <div className="video-wrapper">
+                    <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
+                  </div>
+                  <div className="item-content">
+                    <h1>{data.title}</h1>
+                    <p>{data.description}</p>
+                  </div>
+                </>
+              ) : ( // Se o índice for ímpar
+                <>
+                  <div className="item-content">
+                    <h1>{data.title}</h1>
+                    <p>{data.description}</p>
+                  </div>
+                  <div className="video-wrapper">
+                    <video width="500" height="500" controls autoPlay loop muted src={data.gif} alt="" />
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>
@@ -37,3 +51,4 @@ export const Portfolio = () => {
     </HelmetProvider>
   );
 };
+
