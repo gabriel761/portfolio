@@ -4,7 +4,7 @@
   height: 400px;
   display: flex;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: #222;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
@@ -49,7 +49,7 @@
 .item-content {
   padding: 20px;
   box-sizing: border-box;
-  color: #495057;
+  color: #fff;
 }
 
 .portfolio-item:hover .item-content {
