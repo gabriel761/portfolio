@@ -2,22 +2,26 @@ import linkr from "./assets/images/linkr.png"
 import linkrGif from "./assets/images/linkr.mp4"
 import drivent from "./assets/images/drivent.mp4"
 import trackt from "./assets/images/trackt.mp4"
+import festum from "./assets/images/festum/festum-video.mp4"
+import oceanica from './assets/images/oceanica-sports/oceanica.mp4'
+import lightpower from './assets/images/lightpower/lightpower.mp4'
+import enconar from "./assets/images/enconar/enconar.mp4"
 
 
 const logotext = "JOÃO";
 const meta = {
-    title: "John Doe",
-    description: "I’m Jull stack developer,currently working in Rio de Janeiro",
+    title: "João Gabriel",
+    description: "Sou desenvolvedor full stack, atualmente trabalhando no Rio de Janeiro",
 };
 
 const introdata = {
-    title: "I’m João Brother",
+    title: "Sou João Gabriel",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Programação",
+        second: "Web Dev",
+        third: "Software Developer",
     },
-    description: "Digite algo maneiro João",
+    description: "A solução digital perfeita não existe, mas a minha é bem próxima.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -121,7 +125,28 @@ const services = [
 
 
 
-const dataportfolio = [{
+const dataportfolio = [
+    {
+        gif: enconar,
+        title: "Enconar",
+        description: "Site institucional para uma empresa de projetos de climatização de ambientes e ar condicionados de grande porte.",
+    },
+    {
+        gif: lightpower,
+        title: "Light Power",
+        description: "Site institucional para uma empresa de energia solar no Rio de Janeiro.",
+    },
+    {
+        gif: oceanica,
+        title: "Oceânica Sports",
+        description: "Web aplicação de um simulador para uniformes de fudebol. O usuário tem controle total do modelo, cores e tipos de pacotes que ele pode solicitar para o fabricante.",
+    },
+    {
+        gif: festum ,
+        title: "Festum",
+        description: "Aplicativo que junta organizadores de festa com vendedores de insumos. Completo e intuitivo assim no estilo Ifood.",
+    },
+    {
         gif: linkrGif,
         title:"Rede social de compartilhamento de links",
         description: "Cadastro e Login Intuitivos, compartilhamento de links, siga outros usuários, comente, curta e descubra as trends do momento.",
